@@ -32,6 +32,8 @@ use tool_ally\local_content;
 use tool_ally\models\pluginfileurlprops;
 use tool_ally\logging\logger;
 
+namespace filter_ally;
+
 /**
  * Filter for processing file links for Ally accessibility enhancements.
  * @author    Guy Thomas
@@ -39,7 +41,7 @@ use tool_ally\logging\logger;
  * @copyright Copyright (c) 2017 Open LMS / 2023 Anthology Inc. and its affiliates
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-class filter_ally extends moodle_text_filter {
+class text_filter extends \moodle_text_filter {
 
     /**
      * @var array File ids (path hashes) of all processed files by url.
